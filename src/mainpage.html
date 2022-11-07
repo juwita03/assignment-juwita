@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN PAGE</title>
+    <link rel="stylesheet" href="mainpage.css" />
+  </head>
+  <body>
+
+    <!--for navigation bar-->
+    <div class="drop">
+			<nav>
+        <!---FOR MENU UNORDERED LIST--->
+				<ul>
+					<li><a href="mainpage.html#">MAIN PAGE</a></li>
+          <li><a href="notes.html#">NOTES</a></li>
+          <li><a href="#" onclick="self.close();">EXIT</a></li>
+				</ul>
+			</nav>		
+		</div>
+
+    <!--for search button-->
+    <div class="button">
+      <input type="text" placeholder="enter city" id="city_input">
+      <button onclick="buttonClicked()">Search</button>
+      <br><br>HIKING INFORMATION<br><br>
+      <div id="wind">wind speed: </div>
+      <div id="temp">temperature: </div>
+      <div id="long">longitude: </div>
+      <div id="lat">latitude: </div>
+      <div id="desc">weather: </div>
+    </div>
+
+      <!--if city is not in the API-->
+      <br><div id="find"></div>
+
+  <!--calling the other files-->
+  <script src="mainpage.js"></script>
+  <script src="notes.js"></script>
+
+  <!--suggestion for user-->
+  <br><br><br><h2 class="suggestext">SUGGESTION PLACES FOR HIKING</h2>
+  <div class="container">
+    <div id="broga">
+      <img src="broga.png" width="300"><br>
+      <p>Difficulty level: Easy to moderate<br>
+        Duration (to and from): 1 - 2 hours<br>
+        Highlights: 3 summits, popular sunrise spot</p>
+    </div>
+    <div id="chiling">
+      <img src="chiling.png" width="300">
+      <p>
+        Difficulty level: Moderate<br>
+        Duration (to and from): 1 – 2 hours<br>
+        Highlights: waterfall, picnic area, river crossing<br>
+      </p>
+    </div>
+    <div id="eco">
+      <img src="eco.png" width="300">
+      <p>
+        Difficulty level: Easy<br>
+        Duration (to and from): 1 – 1.5 hours<br>
+        Highlights: KL Tower view, hanging bridges, landscaped gardens
+      </p>
+    </div>   
+  </div><br>  
+  </body>
+</html>
+
+<!--https://www.lokalocal.com/blog/outdoors/50-hiking-trails-to-conquer-in-malaysia/#:~:text=Klang%20Valley-->

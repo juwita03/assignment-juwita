@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/*body styling*/
+body {
+  text-align: center;
+  font-family: poppins;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background: url("hiking.jpg") center center fixed;
+  background-size: cover;
+
+}
+
+/*display data*/
+.button{
+  width: 300px;
+  height: 200px;
+  border: 2px solid rgb(7, 67, 81);
+  border-radius: 10px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+/*button styling*/
+button{
+  background-color: rgb(33, 128, 149);
+  color: black;
+  border-radius: 5px;
+  border-color: rgb(12, 93, 111);
+}
+
+/*navigation bar*/
+nav{
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.drop{
+  padding-top: 0px;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+}
+nav ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  display: block;
+  padding: 0 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px; 
+}
+nav ul li a:hover{
+  background: rgb(238, 195, 110);
+        color: rgb(152, 63, 4);
+}
+
+/*text in div*/
+div #wind, #temp, #long, #lat, #desc{
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/*displaying 'city not found'*/
+#find{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+/*styling for title text for sugggestion*/
+.suggestext{
+  text-shadow: 1px 1px 2px white;
+  font-size: 36px;
+}
+
+/*styling suggesions part*/
+.container{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  position: absolute; left: 20px;
+  border: 2px solid rgb(7, 67, 81);
+  border-radius: 10px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container > div{
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+}

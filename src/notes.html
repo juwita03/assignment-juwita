@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES PAGE</title>
+    <link rel="stylesheet" href="notes.css" />
+  </head>
+  <body>
+
+    <!--for navigation bar-->
+    <div class="drop">
+			<nav>
+        <!---FOR MENU UNORDERED LIST--->
+				<ul>
+					<li><a href="mainpage.html#">MAIN PAGE</a></li>
+          <li><a href="notes.html#">NOTES</a></li>
+          <li><a href="#" onclick="self.close();">EXIT</a></li>
+				</ul>
+			</nav>		
+		</div>
+
+    <div class="button">
+      <h1>PUT YOUR NOTES HERE !</h1>
+
+      <form>
+        <div class="form-group">
+          <label>title name (.txt)</label><br>
+          <input id="fileName" type="text" class="form-control">
+        </div><br>
+
+        <div class="form-group">
+          <label>Your Notes</label><br>
+          <textarea id="fileContents" class="form-control" rows="10" cols="50"></textarea>
+
+        </div>
+      </form>
+
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnUpdate" class="btn btn-default">Update</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+
+    </div>
+
+ 
+  <!--calling the other files-->
+  <script src="notes.js"></script>
+  </body>
+</html>
+
